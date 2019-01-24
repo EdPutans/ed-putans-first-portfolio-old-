@@ -1,0 +1,44 @@
+/* ------------- CONTAINERS ------------*/
+
+
+.main {
+    min-height: 1000px;
+    background-color: #b388ff;
+}
+
+.project-container{
+    padding: 10px 0 10px 0;
+}
+
+
+/* ----------- CARDS ------------ */
+
+.project-card{
+    /* border: #555555 21px ; */
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 500px;
+    height: 100px;
+}
+
+/* ----------SIDE BAR---------- */
+
+.topbar-item{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.topbar-container{
+    width: 100%; 
+    position: fixed; 
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    background-color: #49494985; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+}
