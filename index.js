@@ -1,10 +1,8 @@
 let navList = document.querySelector('.topbar-list')
 let menuButton = document.querySelector('.burger-button')
-
-let navBarOpen = false
+navList.hidden = true
 
 menuButton.addEventListener('click', e =>{
     e.preventDefault()
-    navBarOpen = !navBarOpen
-    navList.hidden = navBarOpen
+    navList.hidden = !navList.hidden
 })
