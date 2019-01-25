@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption 
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,20 +20,34 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="main">
-         <div class='topbar-container'>
+    <div class='topbar-container'>
             <div class='topbar-list'>
-                <a class="topbar-item" href="#">Home</a>
                 <a class="topbar-item" href="#">About</a>
-                <a class="topbar-item" href="#">Projects</a>
-                <a class="topbar-item" href="#">Contact</a>
+                <a class="topbar-item" href="#projects">Projects</a>
+                <a class="topbar-item" href="#contacts">Contact</a>
             </div>
         </div>
-        <!-- <h1> PAGE UNDER CONSTRUCTION :)</h1> -->
+        <div class="main">
+            <!-- to be removed V -->
+        <h1 style='color:gray;'> <br /> <br /> <br /> <br /> <br /> <br />
+            PAGE UNDER CONSTRUCTION :)
+            <br /> <br /> <br /> <br /> <br /> <br /> <br />
+        </h1>
+            <!-- to be removed ^ -->
         <h3>Hello, my name is Ed Putans</h3>
         <p>Full-stack web developer</p>
+        <p>This is where I would put a nice description.</p>
+        <p>Dogs are awesome. I love dogs.</p>
+        <p>Also I love coffee. Very much. With milk and a bit of sugar.</p>
+        <p>I drink an average of 1.5 liters of coke zero every day.</p>
+        <p>Oh, almost forgot to mention, I code sometimes</p>
+        <p>Yes, quite. </p>
+        <p>...</p>
+        <p>I do React, Ruby, JS, HTML, CSS, all that good stuff</p>
+        <p>Once I'm done withthis portfolio I'll continue doing React native and NodeJS.</p>
         <p>Check out my latest work:</p>
         <div class='project-container'>
+            <a name="projects"></a>
             <div class='project-card'>
                 <div class="project-card-items">
                     <img src="./src/giftr.png" alt="giftR">
@@ -44,9 +70,23 @@
             <div class='project-card'>
             </div>
             <div class='project-card'>
+                
             </div>
+        </div><!-- project-container-->
+        <div class='contact-info''>
+            <a name='contacts'></a>
+            <h2>Contact me</h2>
+               <p>Place links here</p>
+               <p>Place links here</p>
+               <p>Place links here</p>
+               <p>Place links here</p>
+               <p>Place links here</p>
+               <p>Place links here</p>
+            <!-- <img src="./src/github-hex.svg" alt=""> -->
+
         </div>
-    </div>
+    </div><!-- main -->
+    
 </body>
 <script src='index.js'></script>
 </html>

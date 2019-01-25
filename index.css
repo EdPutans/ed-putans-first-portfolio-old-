@@ -1,6 +1,16 @@
 /* ----------- Page-wide solutions -------- */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    text-align: center;
+    min-height: 1000px;
+    min-width: 100%;
+    background-color: #303030;
+    font-family: Oxygen, Ubuntu, 'Segoe UI', Roboto, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-h3 {
+h3, h2 {
    color:lightgray;
    font-style: normal;
 }
@@ -14,15 +24,21 @@ p{
 
 /* ----------TOP BAR---------- */
 
-
 .topbar-container{
-    /* background-color: #000000; */
-    padding: 12px 0 12px 0;
+    width: 100%;
+    background-color: #303030;
+    /* don't touch padding as of now, otherwise goes off center */
+    padding: 12px 30px 15px 0px;
+    position: fixed;
     text-align: center;
+    text-align: center;
+    align-items: center;
 }
 .topbar-container a {
-    transition: 0.3s all;
+    padding: 10px 30px 10px 50px;
+    background-color: #303030;
 
+    transition: 0.3s all;
     border: 2px solid transparent;
 }
 .topbar-container a:hover {
@@ -54,11 +70,7 @@ p{
 
 
 .main {
-    font-family: Oxygen, Ubuntu, 'Segoe UI', Roboto, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    min-height: 1000px;
-    min-width: 100%;
-    background-color: #303030;
+   padding-top: 50px;
 }
 
 
@@ -72,6 +84,7 @@ p{
 
 .project-card{
     /* border: #555555 21px ; */
+    cursor:pointer;
     text-align: justify;
     transition: all 0.6s cubic-bezier(.25,.8,.25,1);
     background-color: white;
