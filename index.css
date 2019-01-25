@@ -91,7 +91,7 @@ p{
     margin: 10px auto 10px auto;
     border-radius: 10px;
     width: 80%;
-    min-width: 300px;
+    min-width: 380px;
     max-width: 600px;
     min-height: 200px;
     height: auto;
@@ -150,4 +150,40 @@ p{
 .project-card-text{
     width: 70%;
     background-color: blue;
+}
+
+
+/* --------- My tech stack -------- */
+.stack-container{
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+    min-width: 380px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 300px;
+
+}
+
+.stack-right{
+    margin: 0 0 100px 0;
+    height: auto;
+    display: inline-block;
+    max-height: 300px;
+    vertical-align: center;
+    /* background-color: yellow; */
+    /* background-color: blue; */
+}
+
+.stack-right img {
+    height: auto;
+    width: 40%;
+    margin: 3% 0 0 0;
+}
+
+.stack-right p{
+    display: inline-block;
+    font-size: 40px;
+    /* padding-top: calc(150px - 20px) */
+
 }
