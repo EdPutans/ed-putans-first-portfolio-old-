@@ -1,4 +1,4 @@
 portfolio for myself.
 Currently under construction.
-Hosted on: https://putansfolio.netlify.com/
+Hosted on: www.edputans.com/
 using only basic js/html/css
