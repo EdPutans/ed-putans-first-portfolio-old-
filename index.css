@@ -11,12 +11,14 @@ body{
 }
 
 h3, h2 {
-   color:lightgray;
+    padding-top: 100px;
+   color: #E69F66;
    font-style: normal;
+   font-size: 3em;
 }
 
 p{
-    color:gray;
+   color:gray;
    font-style: normal;
 }
 
@@ -26,33 +28,31 @@ p{
 
 .topbar-container{
     width: 100%;
-    background-color: #303030;
-    /* don't touch padding as of now, otherwise goes off center */
-    padding: 12px 30px 15px 0px;
+    background-color: #50505065;    /* don't touch padding as of now, otherwise goes off center */
     position: fixed;
     text-align: center;
     text-align: center;
     align-items: center;
+
 }
 .topbar-container a {
-    padding: 10px 30px 10px 50px;
-    background-color: #303030;
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 10px 5% 15px 5%;
 
     transition: 0.3s all;
     border: 2px solid transparent;
 }
 .topbar-container a:hover {
     transition: 0.2s all;
-    border-bottom: 2px  solid #F92672;
+    border-bottom: 2px solid #F92672;
 }
 
 .topbar-list{
-    display: inline;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     overflow: hidden;
-    /* background-color: #00000000; */
 }
 
 .topbar-item{
@@ -69,15 +69,16 @@ p{
 /* ------------- CONTAINERS ------------*/
 
 
-.main {
+.main {    
    padding-top: 50px;
 }
 
 
 .project-container{
-    padding: 10px 0 10px 0;
+    padding: 150px 0 10px 0;
     margin-bottom: 30px;
 }
+
 
 
 /* ----------- CARDS ------------ */
@@ -160,30 +161,30 @@ p{
     max-width: 700px;
     min-width: 380px;
     margin: auto;
+    margin-top: 150px;
     height: auto;
-    margin-bottom: 300px;
 
 }
 
-.stack-right{
-    margin: 0 0 100px 0;
+.stack{
+    display: block;
+    margin: 0 0 50px 0;
     height: auto;
-    display: inline-block;
+    /* display: inline-block; */
     max-height: 300px;
-    vertical-align: center;
-    /* background-color: yellow; */
-    /* background-color: blue; */
 }
 
-.stack-right img {
+.stack img {
     height: auto;
-    width: 40%;
-    margin: 3% 0 0 0;
+    width: 20%;
+    min-width: 150px;
+    max-width:200px;
+    margin: 3% 20px 0 0;
 }
 
-.stack-right p{
-    display: inline-block;
-    font-size: 40px;
-    /* padding-top: calc(150px - 20px) */
 
+
+.stack p{
+    font-size: 30px;
+    /* padding-top: calc(150px - 20px) */
 }
