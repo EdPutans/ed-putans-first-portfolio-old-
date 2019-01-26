@@ -14,30 +14,30 @@
         }
 </style>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./index.css">
     <title>Portfolio</title>
 </head>
 <body>
-
+    <div class="mainmost">
 
 
     
-    <div class='topbar-container'>
-            <div class='topbar-list'>
+        <div class="topbar-container">
                 <a class="topbar-item" href="#">About</a>
                 <a class="topbar-item" href="#tech-stack">Technology</a>
                 <a class="topbar-item" href="#projects">Projects</a>
                 <a class="topbar-item" href="#contacts">Contact</a>
-            </div>
         </div>
+
         <div class="main">
             <!-- to be removed V -->
-        <h1 style='color:gray;'> <br /> <br /> <br /> <br /> <br /> <br />
-            PAGE UNDER CONSTRUCTION :)
-            <br /> <br /> <br /> <br /> <br /> <br /> <br />
-        </h1>
+        <div class="content">
+            <h1 style="color:gray;">
+                PAGE UNDER CONSTRUCTION :)
+            </h1>
+        </div>
 
             <!-- to be removed ^ -->
         <h3>Hello, my name is Ed Putans</h3>
@@ -52,49 +52,50 @@
         <p>I do React, Ruby, JS, HTML, CSS, all that good stuff</p>
         <p>Once I'm done withthis portfolio I'll continue doing React native and NodeJS.</p>
 
+        <div class="content">
+            <a name="tech-stack"/>
 
-        <a name="tech-stack"/>
+            <h2>My tech stack:</h2>
+            <div class="stack-container">
+                <div class="stack">
+                    <p>I get excited about </p><div></div>
+                    <img src="./src/react.png" alt="React">
+                    <img src="./src/js.png" alt="Javascript">
 
-        <h2>My tech stack:</h2>
-        <div class='stack-container'>
-            <div class='stack'>
-                <p>I get excited about </p><div></div>
-                <img src="./src/react.png" alt="React">
-                <img src="./src/js.png" alt="Javascript">
-
-            </div>
-            <div class='stack'>
-                <p>My back end runs on...</p><div></div>
-                <img src="./src/rails.png" alt="Rails">
-                <img src="./src/pgsql.png" alt="PostgresQL">
-            </div>
-            <div class='stack'>
-                    <p>These make things look nice</p><div></div>
-                    <img src="./src/css.png" alt="CSS">
-                    <img src="./src/semantic.png" alt="Semantic">
                 </div>
-            <div class='stack'>
-                <p>I'm currently learning</p><div></div>
-                <img  src="./src/node.png" alt="Node">
-                <img  src="./src/mongo.png" alt="MongoDB">
-                <img  src="./src/express.png" alt="Express">
-                <img style='margin-top:2%;' src="./src/native.png" alt="React Native">
-            </div>
-            
-            <div class='stack-left'>
+                <div class="stack">
+                    <p>My back end runs on...</p><div></div>
+                    <img src="./src/ruby.png" alt="Ruby">
+                    <img src="./src/rails.png" alt="Rails">
+                    <img src="./src/pgsql.png" alt="PostgresQL">
+                </div>
+                <div class="stack">
+                        <p>These make things look nice</p><div></div>
+                        <img src="./src/css.png" alt="CSS">
+                        <img src="./src/semantic.png" alt="Semantic">
+                    </div>
+                <div class="stack">
+                    <p>I"m currently learning</p><div></div>
+                    <img  src="./src/node.png" alt="Node">
+                    <img  src="./src/mongo.png" alt="MongoDB">
+                    <img  src="./src/express.png" alt="Express">
+                    <img style="margin-top:2%;" src="./src/native.png" alt="React Native">
+                </div>
                 
+                <div class="stack-left">
+                    
+                </div>
+                <a name="projects" />
             </div>
-            <a name="projects" />
         </div>
-        
+        <div class="content">
         <h2>Check out my latest work:</h2>
-
-        <div class='project-container'>
-            <div class='project-card'>
+        <div class="project-container">
+            <div class="project-card">
                 <div class="project-card-items">
                     <img src="./src/giftr.png" alt="giftR">
                     <h6>Short summary about the project, the card is clickable.</h6>
-                    <div class='project-card-unfolding-texts'></div> 
+                    <div class="project-card-unfolding-texts"></div> 
                         <h4>This is where I would put a more indepth description, maybe a few pics, tech used, etc. The </h4>
                         <p>React</p>
                         <p>React-Router</p>
@@ -107,16 +108,17 @@
                         <p>responsive design.</p>
                     </div>
                 </div>
-            <div class='project-card'>
-            </div>
-            <div class='project-card'>
-            </div>
-            <div class='project-card'>
-                
-            </div>
-        </div><!-- project-container-->
-        <div class='contact-info''>
-            <a name='contacts'></a>
+                <div class="project-card">
+                </div>
+                <div class="project-card">
+                </div>
+                <div class="project-card">
+                </div>
+            </div><!-- project-container-->
+        </div>
+    <div class="content">
+        <div class="contact-info">
+            <a name="contacts"></a>
             <h2>Contact me</h2>
                <p>Place links here</p>
                <p>Place links here</p>
@@ -125,10 +127,10 @@
                <p>Place links here</p>
                <p>Place links here</p>
             <!-- <img src="./src/github-hex.svg" alt=""> -->
-
+            </div>  
         </div>
     </div><!-- main -->
-    
+</div><!--mainmost-->
 </body>
-<script src='index.js'></script>
+<script src="index.js"></script>
 </html>
