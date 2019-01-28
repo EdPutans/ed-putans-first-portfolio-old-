@@ -31,6 +31,7 @@ p{
 
 /* ----------TOP BAR---------- */
 
+
 .topbar-container{
       /* don't touch padding as of now, otherwise goes off center */
     position: fixed;
@@ -89,7 +90,7 @@ p{
     border-radius: 10px;
     /* width: 80%; */
     /* min-width: 380px; */
-    max-width: 600px;
+    /* max-width: 600px; */
     min-height: 200px;
     height: auto;
     padding: 5px 5px 5px 5px;
@@ -188,14 +189,17 @@ p{
 
 .stack p{
     font-size: 30px;
+    padding-bottom: 20px;
     /* padding-top: calc(150px - 20px) */
 }
 
 
 @media(min-width:769px){
     .main{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
         max-width: 1000px;
-        float:right;
         display: block;
         padding: 50px 5% 50px 5%;
     }
@@ -206,6 +210,9 @@ p{
 }
 
 @media(max-width:768px) {
+    .content{
+        margin-top: 5%;
+    }
     .stack-container{
         width: 100%;
     }
@@ -228,7 +235,7 @@ p{
     }
     .topbar-container a {
         font-size: 1.2em;
-        padding: 10px 1% 15px 1%;
+        padding: 10px 5% 15px 5%;
         display: inline-block;
         transition: 0.3s all;
         border: 2px solid transparent;
@@ -237,7 +244,9 @@ p{
         transition: 0.2s all;
         border-bottom: 2px solid #F92672;
     }
-    
+    .project-container{
+        padding-top: 3%;
+    }
   
 }
 
