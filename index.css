@@ -4,6 +4,7 @@
     font-family: graphik;
 }
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -17,15 +18,44 @@ body{
 }
 
 h2,h3 {
+    display: block;
     padding-top: 100px;
-   color: #E69F66;
-   font-style: normal;
-   font-size: 3em;
+    color: #E69F66;
+    font-family: Ubuntu, 'Segoe UI', Roboto, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 3em;
 }
 
 p{
+    font-size: 1.2em;
    color:lightgray;
    font-style: normal;
+}
+
+/* ------ About ------- */
+
+
+.about-me {
+    display: block;
+    float:right;
+    width:100%;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+.about-right{
+    width: 70%;
+    display: block;
+    float: right;
+}
+
+
+.about-left{
+    display: block;
+    width: 70%;
+    margin: 200px 0 200px;
+    float: left;
 }
 
 
@@ -40,8 +70,9 @@ p{
     align-items: center;
 
 }
+
 .topbar-container a {
-    font-size: 1.2em;
+    font-size: 1.4em;
     display: block;
     padding: 10px 5% 15px 5%;
     transition: 0.3s all;
@@ -68,8 +99,6 @@ p{
 .section {
     min-height: 100vh;
 }
-
-
 
 .project-container{
     padding: 150px 0 10px 0;
@@ -205,7 +234,9 @@ p{
         padding: 50px 5% 50px 5%;
     }
     .topbar-container{
-        width: 30%;
+        float:right;
+        display: block;
+        width: 20%;
         max-width: 250px;
     }
 }
@@ -249,6 +280,13 @@ p{
         padding-top: 3%;
     }
   
+    .about-right, .about-left{
+    float: left;
+    width: 90%;
+    margin: 100px 5% 100px 5%;
+    }
+
+
 }
 
 .main{
