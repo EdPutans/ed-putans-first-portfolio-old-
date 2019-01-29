@@ -4,6 +4,12 @@
     font-family: graphik;
 }
 
+/* ----------- Page-wide solutions -------- */
+@font-face{
+    src: url(./font/retro.ttf);
+    font-family: retro;
+}
+
 
 html{
     scroll-behavior: smooth;
@@ -27,7 +33,7 @@ h2,h3 {
 }
 
 p{
-    font-size: 1.2em;
+    font-size: 1em;
     color:lightgray;
     font-style: normal;
 }
@@ -36,7 +42,6 @@ p{
 
 
 .about-me {
-    display: block;
     float:right;
     width:100%;
     text-align: justify;
@@ -47,11 +52,12 @@ p{
     padding-bottom: 100px;
 }
 .about-me p{
+    font-size: 1.4em;
     padding-bottom: 1em;
 }
 
 .about-right{
-    width: 70%;
+    width: 60%;
     display: block;
     float: right;
     margin: 0 0 200px;
@@ -60,7 +66,7 @@ p{
 
 .about-left{
     display: block;
-    width: 70%;
+    width: 60%;
     margin: 0 0 200px;
     float: left;
 }
@@ -104,7 +110,8 @@ p{
 /* ------------- CONTAINERS ------------*/
 
 .section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    display: block;
 }
 
 .project-container{
@@ -135,7 +142,7 @@ p{
 }
 
 .project-card:hover {
-    box-shadow: 3px 14px 28px rgba(255, 153, 0, 0.507), 0 10px 10px rgba(0,0,0,0.22);  
+    box-shadow: 3px 14px 28px #202020, 0 10px 10px rgba(0,0,0,0.22);  
 }
 
 .project-card-items {
@@ -197,15 +204,19 @@ p{
     min-width: 180px;
     margin: auto;
     margin-top: 150px;
-    height: auto;
+    /* height: auto; */
 
 }
 
 .content{
     display: block;
-    /* background-color: #303030; */
-    /* margin: 10px 10px 10px 10px; */
-    min-height: 100vh;
+    overflow: hidden;
+    margin: 10px 10px 10px 10px;
+    padding-top:100px;
+}
+
+.content h3{
+    padding-bottom: 100px;
 }
 
 .stack{
@@ -218,18 +229,26 @@ p{
 .stack img {
     display: inline-block;
     height: auto;
-    width: 20%;
-    min-width: 150px;
-    max-width:200px;
-    /* margin: 3% 20px 0 0; */
+    width: 10%;
+    transition: 0.3s all;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 10px 10px 0 10px;
+}
+.stack img:hover {
+    transform: scale(1.5)
 }
 
-
-
-.stack p{
-    font-size: 30px;
-    padding-bottom: 20px;
-    /* padding-top: calc(150px - 20px) */
+.stack-text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 
@@ -301,19 +320,14 @@ p{
 
 .main{
     text-align: center;
-    /* max-width: 1200px; */
     font-family: graphik, Oxygen, Ubuntu, 'Segoe UI', Roboto, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
-/*  pics and media */
 .embedded-picture{
     display: inline;
     margin: 0 0 0 0;
-    /* left: 50%;
-    top: 50%;
 
-} */
 }
 
 .embedded-picture p{
