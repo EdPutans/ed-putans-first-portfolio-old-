@@ -28,8 +28,8 @@ h2,h3 {
 
 p{
     font-size: 1.2em;
-   color:lightgray;
-   font-style: normal;
+    color:lightgray;
+    font-style: normal;
 }
 
 /* ------ About ------- */
@@ -43,18 +43,25 @@ p{
     -moz-text-align-last: center;
     text-align-last: center;
 }
+.about-me h3{
+    padding-bottom: 100px;
+}
+.about-me p{
+    padding-bottom: 1em;
+}
 
 .about-right{
     width: 70%;
     display: block;
     float: right;
+    margin: 0 0 200px;
 }
 
 
 .about-left{
     display: block;
     width: 70%;
-    margin: 200px 0 200px;
+    margin: 0 0 200px;
     float: left;
 }
 
@@ -195,6 +202,9 @@ p{
 }
 
 .content{
+    display: block;
+    /* background-color: #303030; */
+    /* margin: 10px 10px 10px 10px; */
     min-height: 100vh;
 }
 
@@ -227,7 +237,7 @@ p{
     .main{
         position: absolute;
         right: 20%;  
-        transform: translate(20%);
+        transform: translate(25%);
         max-width: 1200px;
         /* width:70%; */
         display: block;
