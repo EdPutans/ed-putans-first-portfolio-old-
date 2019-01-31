@@ -45,6 +45,8 @@ p{
 
  .about-me {
     /* left: 50%; */
+    font-size: 1.4em;
+    padding-bottom: 1em;
     text-align: justify;
     -moz-text-align-last: center;
     text-align-last: center;
@@ -53,8 +55,7 @@ p{
     padding-bottom: 100px;
 }
 .about-me p{
-    font-size: 1.4em;
-    padding-bottom: 1em;
+    
 }
 .about-me a{
     font-family: Arial;

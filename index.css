@@ -31,10 +31,12 @@ h2,h3 {
     font-size: 3em;
 }
 
-p{
+p, a{
+    text-decoration: none;
     font-size: 1em;
     color:lightgray;
     font-style: normal;
+    font-family: graphik;
 }
 
 
@@ -75,7 +77,7 @@ p{
     text-decoration: none;
 }
 
-/* ----ROOT------ */
+/*ROOT */
 
 .main{
     margin: 0 auto;
@@ -88,22 +90,30 @@ p{
     min-height: 400px;
 }
 
-
 /* BANNER */
 
 .banner {
-    margin: 0 auto;
+    margin: 100px auto;
+    padding-top: 20px;
     height: 500;
     background-color: lightgrey;
     text-align: center;
 }
 
 .banner-photo{
-    padding-top: 100px;
+    margin-top: 20px;
+    overflow: hidden;
+    margin-top: 100px;
+    border-radius: 50%;
     margin: 0 auto;
-    height: 100px;
-    width:100px;
+    height: 300px;
+    width:300px;
     background-color: blue;
+    border: 2px solid white;
+}
+.banner-photo img{
+    max-width: 105%;
+    
 }
 .banner p{
     font-size: 30px;
@@ -159,28 +169,29 @@ p{
     transform: scale(1.5)
 }
 
-/* Project */
+/* Projects */
+
 .projects{
-    margin-top: 60px;
+    margin: 60px auto;
+    width: 100%;
 }
 
 .project{
+    /* margin: 5px; */
     position: relative;
-  text-align: center;
-  background-color: red;
+    background-color: red;
+     text-align: center;
+    width: 45%;
+    max-width: 300px;
+    display: inline-block;
 }
 
-.project-text{
-    width: 100%;
-}
-.project-image{
+.project-frame{
+    border: 1px solid grey;
+    max-height: 300px;
+    height:25%;
+    width: auto;
     width:100%;
-}
-.project {
-    /* margin: 2% 2% 2% 2%; */
-    text-align: center;
-    width: 40%;
-    display: inline-block;
 }
 
 .project h4{
@@ -192,13 +203,13 @@ p{
 .project p{
     position: absolute;
     top: 30%;
-    left: 50%;
-    transform: translate(-50%);
 }
 
 .project img{
+    max-height: 300px;
+    width: 100%;
     position: relative;
-    max-width: 100%;
+    vertical-align: middle;
     transition: 0.3s all;
 }
 .project img:hover{
