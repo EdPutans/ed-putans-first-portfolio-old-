@@ -1,0 +1,230 @@
+/* ----------- Page-wide solutions -------- */
+@font-face{
+    src: url(./font/Graphik-Light.ttf);
+    font-family: graphik;
+}
+
+/* ----------- Page-wide solutions -------- */
+@font-face{
+    src: url(./font/retro.ttf);
+    font-family: retro;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    text-align: center;
+    /* align-items: center; */
+    width: 100%;
+    /* max-width: 600px; */
+    background-color: #404040;
+    font-family: graphik, Oxygen, Ubuntu, 'Segoe UI', Roboto, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2,h3 {
+    display: block;
+    padding-top: 100px;
+    color:  #A6E22E;
+    /* color:white; */
+    font-family: Ubuntu, 'Segoe UI', Roboto, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 3em;
+}
+
+p{
+    font-size: 1em;
+    color:lightgray;
+    font-style: normal;
+}
+
+
+/* ------ About ------- */
+
+
+ .about-me {
+    /* left: 50%; */
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+} 
+.about-me h3{
+    padding-bottom: 100px;
+}
+.about-me p{
+    font-size: 1.4em;
+    padding-bottom: 1em;
+}
+.about-me a{
+    font-family: Arial;
+    text-decoration: none;
+    color: lightgray;
+    font-style: bold;
+}
+.about-right, .about-left{
+    margin: 100px 5% 100px 5%;
+    }
+
+/* ----------TOP BAR---------- */
+
+
+/* ------------- CONTAINERS ------------*/
+
+.section {
+    /* min-height: 100vh; */
+    display: block;
+}
+
+.project-container{
+    padding: 150px 0 10px 0;
+    margin-bottom: 30px;
+}
+
+/* ----------- CARDS ------------
+
+
+
+/* --------- My tech stack -------- */
+.stack-container{
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+    min-width: 180px;
+    margin: auto;
+    margin-top: 150px;
+    /* height: auto; */
+
+}
+
+.content{
+    display: block;
+    padding: 0 20% 0 20%;
+    overflow: hidden;
+    /* margin: 10px 10px 10px 10px; */
+    max-width: 600px;
+    width:90%;
+    padding-top:100px;
+}
+
+.content h3{
+    padding-bottom: 100px;
+}
+
+.stack{
+    display: block;
+    margin: 0 0 50px 0;
+    height: auto;
+    /* display: inline-block; */
+}
+
+.stack img {
+    display: inline-block;
+    height: auto;
+    width: 10%;
+    transition: 0.3s all;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 10px 10px 0 10px;
+}
+.stack img:hover {
+    transform: scale(1.5)
+}
+
+.stack-text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    text-align: center;
+}
+
+
+    .content{
+        margin-top: 5%;
+    }
+    .stack-container{
+        width: 100%;
+    }
+    .stack{
+        padding-bottom: 40px;
+    }
+    .stack img{
+        margin: 10px 5px 0 5px;
+    }
+  
+    .project-container{
+        padding-top: 3%;
+    }
+
+    .banner {
+        margin-right:-15%;
+        float:right;
+        max-height: 1000px;
+        height:auto;
+      }
+
+.contact-info h3{
+    margin-bottom: -50px;
+}
+
+.contact{
+    display: inline;
+    max-width: 100px;
+    width:20%;
+    height: auto;
+    margin: 20px 15px 0px 15px;
+}
+
+.medium-card{
+    margin: 20px 0 0 0;
+    border-radius: 10px;
+}
+
+.blogs p{
+    font-size: 30px;
+}
+
+/* --BANNER----- */
+  .banner-container{
+    position: relative;
+      display:block;
+      text-align: center;
+      max-height: 600px;
+      min-width:350px;
+      max-width: 500px;
+      width: 70%;
+      border: 1px solid white;
+
+      overflow:hidden;
+      left: 50%;
+      transform: translate(-50%);
+  }
+
+  .banner-text-first {
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 5px 10px 5px;
+    background-color: #20202055;
+    border: 1px solid white;
+    color: white;
+    top:50%;
+  }
+  
+  .banner-text-second {
+    font-size: 1.2em;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 5px 10px 5px;
+    background-color: #20202055;
+    border: 1px solid white;
+    color: white;
+    top:70%;
+  }
+
+

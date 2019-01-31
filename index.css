@@ -15,12 +15,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    text-align: justify;
-    /* align-items: center; */
-    width: 100%;
-    max-width: 1600px;
-    background-color: #404040;
+    text-align: center;
+    background-color: #808080;
     font-family: graphik, Oxygen, Ubuntu, 'Segoe UI', Roboto, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
 }
 
 h2,h3 {
@@ -39,62 +37,15 @@ p{
     font-style: normal;
 }
 
-/* ------ About ------- */
 
 
-.about-me {
-    float:right;
-    width:100%;
-    text-align: justify;
-    -moz-text-align-last: center;
-    text-align-last: center;
-}
-.about-me h3{
-    padding-bottom: 100px;
-}
-.about-me p{
-    font-size: 1.4em;
-    padding-bottom: 1em;
-}
-.about-me a{
-    font-family: Arial;
-    text-decoration: none;
-    color: lightgray;
-    font-style: bold;
-}
-
-.about-right{
-    width: 60%;
-    display: inline-block;
-    float: right;
-    margin: 0 0 200px;
-}
-.about-me img{
-    display: inline-block;
-    width: 30%;
-    height: auto;
-}
-
-.about-left{
-    display: inline-block;
-    width: 60%;
-    margin: 0 0 200px;
-    float: left;
-}
-
-.about-left p {
-    display: inline-block;
-}
-.about-right p {
-    display: inline-block;
-}
-
-/* ----------TOP BAR---------- */
-
+/* TOPBAR */
 
 .topbar-container{
     background-color: #303030;    /* don't touch padding as of now, otherwise goes off center */
     z-index: 1000;
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
       /* don't touch padding as of now, otherwise goes off center */
     position: fixed;
     text-align: center;
@@ -105,7 +56,7 @@ p{
 
 .topbar-container a {
     font-size: 1.4em;
-    display: block;
+    display: inline-block;
     padding: 10px 5% 15px 5%;
     transition: 0.3s all;
     border: 2px solid transparent;
@@ -124,55 +75,78 @@ p{
     text-decoration: none;
 }
 
+/* ----ROOT------ */
 
-
-/* ------------- CONTAINERS ------------*/
-
-.section {
-    /* min-height: 100vh; */
-    display: block;
+.main{
+    margin: 0 auto;
+    padding: 75px ;
+    display:block;
+    /* width: 90%; */
+    min-width: 375px;
+    max-width: 1000px;
+    background-color: yellow;
+    min-height: 400px;
 }
 
-.project-container{
-    padding: 150px 0 10px 0;
-    margin-bottom: 30px;
-}
 
-/* ----------- CARDS ------------
+/* BANNER */
 
-
-
-/* --------- My tech stack -------- */
-.stack-container{
+.banner {
+    margin: 0 auto;
+    height: 500;
+    background-color: lightgrey;
     text-align: center;
-    width: 90%;
-    max-width: 700px;
-    min-width: 180px;
-    margin: auto;
-    margin-top: 150px;
-    /* height: auto; */
-
 }
+
+.banner-photo{
+    padding-top: 100px;
+    margin: 0 auto;
+    height: 100px;
+    width:100px;
+    background-color: blue;
+}
+.banner p{
+    font-size: 30px;
+    margin: 50px;
+    color: green;
+}
+
+/* CONTENT */
 
 .content{
-    display: block;
-    overflow: hidden;
-    margin: 10px 10px 10px 10px;
-    padding-top:100px;
+    background-color:green;
+    border: 1px solid red;
 }
 
-.content h3{
-    padding-bottom: 100px;
+.content a{
+    color: grey;
+   
 }
 
-.stack{
-    display: block;
-    margin: 0 0 50px 0;
+/* CONTACT */
+
+.contact img{
+    margin: 0 20px 0 20px;
+    width: 10%;
     height: auto;
-    /* display: inline-block; */
 }
 
-.stack img {
+/* ABOUT ME */
+
+.about p{   
+    max-width: 70%;
+    margin: 20px auto;
+    font-size: 1.4em;
+    padding-bottom: 1em;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+
+/* TECHNOLOGY*/
+
+.technology img {
     display: inline-block;
     height: auto;
     width: 10%;
@@ -181,174 +155,52 @@ p{
     max-width: 100px;
     margin: 10px 10px 0 10px;
 }
-.stack img:hover {
+.technology img:hover {
     transform: scale(1.5)
 }
 
-.stack-text{
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+/* Project */
+.projects{
+    margin-top: 60px;
 }
 
-
-@media(min-width:1080px){
-    .main{
-        position: absolute;
-        right: 20%;  
-        transform: translate(25%);
-        max-width: 1200px;
-        /* width:70%; */
-        display: block;
-        padding: 50px 5% 50px 5%;
-        margin-left: 5%;
-    }
-    .topbar-container{
-        padding-bottom: 100%;
-        padding-top: 30vh;
-        float:right;
-        display: block;
-        width: 20%;
-        max-width: 250px;
-    }
-    .banner {
-        max-height: 1000px;
-        height:auto;
-        left: -15%;
-        max-width: 700px;
-    }
-    .banner-container{
-        max-width:700px;
-    }
-}
-
-@media(max-width:1079px) {
-    .content{
-        margin-top: 5%;
-    }
-    .stack-container{
-        width: 100%;
-    }
-    .stack{
-        padding-bottom: 40px;
-    }
-    .stack img{
-        margin: 10px 5px 0 5px;
-    }
-    .main{
-        width:100%;
-        padding-top: 50px;
-    }
-    .topbar-container{
-        
-        width: 100%;
-        position: fixed;
-        background-color: #303030;    /* don't touch padding as of now, otherwise goes off center */
-        box-shadow: 0px 0px 10px black;
-        text-align: center;
-        align-items: center;
-    }
-    .topbar-container a {
-        font-size: 1.2em;
-        padding: 10px 3% 15px 3%;
-        display: inline-block;
-        transition: 0.3s all;
-        border: 2px solid transparent;
-    }
-    .topbar-container a:hover {
-        transition: 0.2s all;
-        border-bottom: 2px solid #F92672;
-    }
-    .project-container{
-        padding-top: 3%;
-    }
-
-    .about-right, .about-left{
-    float: left;
-    width: 90%;
-    margin: 100px 5% 100px 5%;
-    }
-
-    .banner {
-        margin-right:-15%;
-        float:right;
-        max-height: 1000px;
-        height:auto;
-      }
-
-}
-
-.main{
-    text-align: center;
-    font-family: graphik, Oxygen, Ubuntu, 'Segoe UI', Roboto, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.contact-info h3{
-    margin-bottom: -50px;
-}
-
-.contact{
-    display: inline;
-    max-width: 100px;
-    width:20%;
-    height: auto;
-    margin: 20px 15px 0px 15px;
-}
-
-.medium-card{
-    margin: 20px 0 0 0;
-    border-radius: 10px;
-}
-
-.blogs p{
-    font-size: 30px;
-}
-
-/* --BANNER----- */
-  .banner-container{
+.project{
     position: relative;
-      display:block;
-      text-align: center;
-      max-height: 600px;
-      min-width:350px;
-      max-width: 500px;
-      width: 70%;
-      border: 1px solid white;
-   
-    min-width: 350px;
-      overflow:hidden;
-      left: 50%;
-      transform: translate(-50%);
-  }
+  text-align: center;
+  background-color: red;
+}
 
-  .banner-text-first {
-    font-size: 2em;
+.project-text{
+    width: 100%;
+}
+.project-image{
+    width:100%;
+}
+.project {
+    /* margin: 2% 2% 2% 2%; */
+    text-align: center;
+    width: 40%;
+    display: inline-block;
+}
+
+.project h4{
     position: absolute;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 5px 10px 5px;
-    background-color: #20202055;
-    border: 1px solid white;
-    color: white;
-    top:50%;
-  }
-  
-  .banner-text-second {
-    font-size: 1.2em;
+    transform: translate(-50%);
+}
+.project p{
     position: absolute;
+    top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 5px 10px 5px;
-    background-color: #20202055;
-    border: 1px solid white;
-    color: white;
-    top:70%;
-  }
+    transform: translate(-50%);
+}
 
-
+.project img{
+    position: relative;
+    max-width: 100%;
+    transition: 0.3s all;
+}
+.project img:hover{
+    opacity: 0.2;
+}
