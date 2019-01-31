@@ -24,7 +24,7 @@ body{
 h2,h3 {
     display: block;
     padding-top: 100px;
-    color:  #A6E22E;
+    /* color:  #A6E22E; */
     /* color:white; */
     font-family: Ubuntu, 'Segoe UI', Roboto, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
