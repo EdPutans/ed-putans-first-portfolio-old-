@@ -243,7 +243,7 @@ a:target {
     overflow: hidden;
     display: inline-block;
     margin: 2% 0.5%;
-    box-shadow: 2px 2px 2px #20202088;
+    box-shadow: 1px 1px 1px #20202088;
     height: 250px;
     width: 46%;
     transition: 0.1s all;
@@ -261,7 +261,7 @@ a:target {
 }
 
 .blog-card:hover{
-    box-shadow: 4px 4px 2px #20202088;
+    box-shadow: 3px 3px 2px #20202088;
 }
 
 .more-blogs{
@@ -301,6 +301,9 @@ a:target {
         height: 180px;
         width: 80%;
         display:block;
+    }
+    .banner{
+        margin-top: 50px;
     }
 }
 
