@@ -35,3 +35,11 @@
 // ) 
 
 // checkWindow()
+
+let p = document.querySelector('#stack')
+
+document.addEventListener('',event=>{
+    if( event.target.name="react"){
+        p.innerText="Hello"
+    }
+})
