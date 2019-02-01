@@ -10,3 +10,28 @@
 //         p.forEach(p=>p.style.display = p.style.display !== ''? '' : 'block')
 //     })
 // })
+
+
+// let links = document.querySelectorAll(".topbar-item")
+
+// // const checkWindow = (event) =>{
+// // //    event.preventDefault()
+// //     console.log(window.innerWidth)
+// //     return window.innerWidth<=768 && links.forEach(i=>
+// //         i.innerText = i.innerText[0]    
+// //     )
+// // }
+
+// document.addEventListener('resize', checkWindow = (event) =>
+// {
+//     //    event.preventDefault()
+//         console.log(window.innerWidth)
+//         return window.innerWidth<=768 && links.forEach(i=>
+//             i.innerText = i.innerText[0]    
+//         )
+//     }
+    
+
+// ) 
+
+// checkWindow()

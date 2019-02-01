@@ -21,15 +21,22 @@ body{
   
 }
 
-h2,h3 {
+h3, h2 {
     display: block;
-    padding-top: 100px;
-    /* color:  #A6E22E; */
-    /* color:white; */
+    color:  #505050;
     font-family: Ubuntu, 'Segoe UI', Roboto, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
+}
+
+h3{
+    font-size: 2em;
+}
+
+h2{
     font-size: 3em;
 }
+
+
 
 p, a{
     text-decoration: none;
@@ -39,7 +46,12 @@ p, a{
     font-family: graphik;
 }
 
-
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
 
 /* TOPBAR */
 
@@ -57,9 +69,10 @@ p, a{
 }
 
 .topbar-container a {
+    display: flex;
+    flex: 1;
     font-size: 1.4em;
     display: inline-block;
-    padding: 10px 5% 15px 5%;
     transition: 0.3s all;
     border: 2px solid transparent;
 }
@@ -73,7 +86,7 @@ p, a{
     margin: 0 auto;
     color: #F92672;
     text-align: center;
-    padding: 14px 16px 10px 16px;
+    padding: 14px 8px 10px 8px;
     text-decoration: none;
 }
 
@@ -81,69 +94,94 @@ p, a{
 
 .main{
     margin: 0 auto;
-    padding: 75px ;
+    padding: 1px 0 0 0;
     display:block;
-    /* width: 90%; */
     min-width: 375px;
-    max-width: 1000px;
-    background-color: yellow;
+    max-width: 900px;
     min-height: 400px;
+}
+
+@media(max-width:768px){
+    .main{
+        padding: 5px 0 0 0;
+    }
+    .banner{
+        /* border: 1px solid transparent; */
+        margin-bottom: 100px auto 20px;
+    }
+
 }
 
 /* BANNER */
 
 .banner {
+    min-width:375px;
+    box-shadow: 8px 8px 8px #30303044;
     margin: 100px auto;
     padding-top: 20px;
-    height: 500;
     background-color: lightgrey;
     text-align: center;
+    /* border: 2px solid white; */
 }
 
 .banner-photo{
-    margin-top: 20px;
     overflow: hidden;
     margin-top: 100px;
-    border-radius: 50%;
+    border-radius: 100%;
     margin: 0 auto;
-    height: 300px;
-    width:300px;
-    background-color: blue;
+    height: 30%;
+    width:30%;
+    min-width: 250px;
+    /* background-color: blue; */
     border: 2px solid white;
 }
 .banner-photo img{
-    max-width: 105%;
+    max-width: 100%;
     
 }
 .banner p{
     font-size: 30px;
     margin: 50px;
-    color: green;
+    /* color: green; */
 }
+
+
+/* CONTACT */
+.contact{
+    background-color: #F92672;
+    margin: 40px auto;
+    box-shadow: 8px 8px 8px #30303044;
+}
+
+.contact img{
+    margin: 20px 20px 20px 20px;
+    width: 10%;
+    height: auto;
+    transition: 0.3s all;
+}
+.contact img:hover{
+    box-shadow: 0  0 6px 6px #30303044;
+    border-radius: 100%;
+}
+
 
 /* CONTENT */
 
 .content{
-    background-color:green;
-    border: 1px solid red;
+    background-color: #eeeeee;
+    box-shadow: 8px 8px 8px #30303044;
+    padding: 5% 0;
+    margin: 20px auto;
 }
 
 .content a{
     color: grey;
-   
-}
-
-/* CONTACT */
-
-.contact img{
-    margin: 0 20px 0 20px;
-    width: 10%;
-    height: auto;
 }
 
 /* ABOUT ME */
 
 .about p{   
+    color: #303030;
     max-width: 70%;
     margin: 20px auto;
     font-size: 1.4em;
@@ -187,12 +225,12 @@ p, a{
 }
 
 .project-frame{
-    border: 1px solid grey;
     max-height: 300px;
     height:25%;
     width: auto;
     width:100%;
 }
+
 
 .project h4{
     position: absolute;
@@ -214,4 +252,5 @@ p, a{
 }
 .project img:hover{
     opacity: 0.2;
+    /* box-shadow: 6px 6px #30303044; */
 }
