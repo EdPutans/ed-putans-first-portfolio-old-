@@ -200,7 +200,6 @@ a:target {
 .project{
     position: relative;
     text-align: center;
-    width: 45%;
     max-width: 300px;
     display: inline-block;
 }
@@ -244,6 +243,7 @@ a:target {
 /* Blogs */
 
 .blogs-flex{
+    margin: 0 20%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -262,7 +262,7 @@ a:target {
     margin: 2% 0.5%;
     box-shadow: 1px 1px 1px #20202088;
     height: 250px;
-    width: 46%;
+    width: 100%;
     transition: 0.1s all;
     background-color: #fff;
 }
