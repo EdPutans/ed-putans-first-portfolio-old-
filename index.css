@@ -210,6 +210,11 @@ a:target {
     height:25%;
     width: auto;
     width:100%;
+    margin: auto;
+}
+.project-text{
+    display: flex;
+    text-align: center;
 }
 
 .project h4{
@@ -238,6 +243,18 @@ a:target {
 
 /* Blogs */
 
+.blogs-flex{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.projects{
+       display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 80%;
+    margin: auto;
+}
 
 .blog-card{
     overflow: hidden;
@@ -266,7 +283,6 @@ a:target {
 
 .more-blogs{
     padding: 10px;
-    display: block;
     border-radius: 10px;
     margin: 0 auto;
     background-color: #F92672;
@@ -276,15 +292,41 @@ a:target {
 }
 .more-blogs p{
     position: relative;
-    top: -30%;
     font-size: 200%;
-    display: inline-block;
 }
 .more-blogs img{
-    display: inline-block;
     max-width: 40px;
 }
 
+/* career */
+
+.career {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+}
+.career-desc{
+    flex: 3;
+    margin: 0 6px;
+}
+.career-image{
+    flex: 1;
+        margin: 0 6px;
+
+    
+}
+.career-dates{
+    flex: 1;
+        margin: 0 6px;
+
+}
+.career-image img {
+    max-width: 100px;
+    max-height: 100px;
+}
+.career p{
+    color: black;
+}
 /* MEDIA QUERIES */
 
 @media(max-width:768px){
